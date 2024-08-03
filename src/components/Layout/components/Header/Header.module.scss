@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 24px;
 }
 
 .search,
@@ -103,9 +104,34 @@
     color: red;
 }
 
+//Actions
+.actions {
+    display: flex;
+    align-items: center;
+}
+
 .more-btn {
     font-size: 1.8rem;
     margin-left: 24px;
     background: transparent;
     padding: 8px;
+    cursor: pointer;
+}
+
+.action-btn {
+    color: #161823;
+    background-color: transparent;
+    font-size: 2.2rem;
+    padding: 4px 12px;
+    cursor: pointer;
+    display: flex;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 12px;
+    cursor: pointer;
 }
