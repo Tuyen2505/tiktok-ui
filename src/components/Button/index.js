@@ -1,13 +1,14 @@
+import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Button.module.scss';
-import { icon } from '@fortawesome/fontawesome-svg-core';
+// import { icon } from '@fortawesome/fontawesome-svg-core';
 
 const cx = classNames.bind(styles);
 
 function Button({
-    to,
     href,
+    to,
     text = false,
     primary = false,
     outline = false,
@@ -64,5 +65,22 @@ function Button({
         </Comp>
     );
 }
+
+Button.propTypes = {
+    href: PropTypes.string,
+    to: PropTypes.string,
+    text: PropTypes.bool,
+    primary: PropTypes.bool,
+    outline: PropTypes.bool,
+    disabled: PropTypes.bool,
+    rounded: PropTypes.bool,
+    small: PropTypes.bool,
+    large: PropTypes.bool,
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+    leftIcon: PropTypes.node,
+    rightIcon: PropTypes.node,
+    onClick: PropTypes.func,
+};
 
 export default Button;

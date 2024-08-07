@@ -1,11 +1,16 @@
 .wrapper {
     --search-border-radius: 92px;
 
-    height: var(--default-layout-header-height, 60px);
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
+    height: var(--default-layout-header-height, 60px);
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
 }
 
 .inner {
@@ -19,6 +24,10 @@
 
 .custom-login {
     color: red;
+}
+
+.logo-link {
+    display: flex;
 }
 
 //Actions
