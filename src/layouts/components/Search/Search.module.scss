@@ -27,6 +27,7 @@
         flex: 1;
         caret-color: var(--primary);
         font-family: 'TikTokFon', san-serif;
+        padding-right: 40px;
     }
 
     &::after {
@@ -61,7 +62,7 @@
 .clear,
 .loading {
     position: absolute;
-    right: 60px;
+    right: 65px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 15px;
